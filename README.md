@@ -30,7 +30,7 @@ sudo apt-get -y install cuda libcupti-dev
 ```
 python3 src/multi-person-video-extractor.py \
   --input_folder=./mp4s/ \
-  --output_folder=./processing/\
+  --output_folder=./processing/ \
   --num_sample=10 \
   --display_results \
   --use_gpu
