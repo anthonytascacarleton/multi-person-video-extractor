@@ -28,13 +28,22 @@ sudo apt-get -y install cuda libcupti-dev
 #### Find 10 random multi-person videos in the ```input_folder``` and copy them to the ```output_folder``` while displaying facial detection results with GPU enabled
 
 ```
-python3 src/multi-person-video-extractor.py --input_folder=./mp4s/ --output_folder=./processing/ --num_sample=10 --display_results --use_gpu
+python3 src/multi-person-video-extractor.py \
+  --input_folder=./mp4s/ \
+  --output_folder=./processing/\
+  --num_sample=10 \
+  --display_results \
+  --use_gpu
 ```
 
 #### Find 5 random single-person videos in the ```input_folder``` and copy them to the ```output_folder``` without display facial detection results and while using CPU mode
 
 ```
-python3 src/multi-person-video-extractor.py --input_folder=./mp4s/ --output_folder=./processing/ --num_sample=5 --single_person_mode
+python3 src/multi-person-video-extractor.py \
+  --input_folder=./mp4s/ \
+  --output_folder=./processing/ \
+  --num_sample=5 \
+  --single_person_mode
 ```
 
 ## Libraries
